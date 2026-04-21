@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Delete</title>
+</head>
+<body>
+    <h1>Student Delete</h1>
+    <p>Are you sure you want to delete {{student.first_name}} {{student.last_name}} ?</p>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <button type="submit">Yes Delete</button>
+    </form>
+    <button type="/">cancel</button>
+</body>
+</html>
